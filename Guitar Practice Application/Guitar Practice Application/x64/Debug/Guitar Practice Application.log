@@ -1,3 +1,4 @@
 ﻿  Source.cpp
-C:\Users\jacob\OneDrive\Documents\GitHub\Home-Projects\Guitar Practice Application\Guitar Practice Application\Source.cpp(15,12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+C:\Users\jacob\OneDrive\Documents\GitHub\Home-Projects\Guitar Practice Application\Guitar Practice Application\Source.cpp(26,12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+C:\Users\jacob\OneDrive\Documents\GitHub\Home-Projects\Guitar Practice Application\Guitar Practice Application\Source.cpp(86,12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
   Guitar Practice Application.vcxproj -> C:\Users\jacob\OneDrive\Documents\GitHub\Home-Projects\Guitar Practice Application\x64\Debug\Guitar Practice Application.exe

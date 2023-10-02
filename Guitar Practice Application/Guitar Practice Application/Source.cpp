@@ -1,21 +1,30 @@
-#include "header.h"
+#include "Declarations.h"
 
 int main() {
+	int y;
 
-	int chordXgen = Gen();
+	do {
+		cout << "Would you like to begin?\n";
+		cin >> y;
 
-	string chordX = ChordChoice(chordXgen);
+		system("CLS");
+		int chordXgen = Gen();
 
-	cout << chordX << endl;
+		string chordX = ChordChoice(chordXgen);
 
+		cout << chordX << endl;
+
+		strums();
+		
+	} while (y == 1);
+		system("Pause");
+	
 }
 
 int Gen() { //14 chords
 
 	srand(time(NULL));
-	int generatedNumber = rand() % 14 + 0;
-
-	
+	int generatedNumber = rand() % 14 + 1;
 
 	return generatedNumber;
 }
@@ -65,10 +74,60 @@ string ChordChoice(int X) {
 		Chord = "F#";
 	}
 	else {
-
+		cout << "no chord\n";
 	}
 
 	return Chord;
+}
+
+int strums() {
+
+	int strum = 0;
+	srand(time(NULL));
+	strum = rand() % 2 + 1;
+
+	if(strum == 1) {
+		downstrums();
+		
+	}
+	else if(strum == 2) {
+		upstrums();
+		
+	}
+
+	int strum2 = 0;
+	strum2 = rand() % 2 + 0;
+
+	if (strum2 == 0) {
+		downstrums();
+		
+	}
+	else if (strum2 == 1) {
+		upstrums();
+		
+	}
+
+	int strum3 = 0;
+	strum3 = rand() % 2 + 0;
+
+	if (strum3 == 0) {
+		downstrums();
+		
+	}
+	else if (strum3 == 1) {
+		upstrums();
+		
+	}
+	cout << "\n";
+	return 0;
+}
+
+void downstrums() {
+	cout << "\\/   ";
+}
+
+void upstrums() {
+	cout << "/\\   ";
 }
 
 int ascii() {
